@@ -1,0 +1,40 @@
+body{
+    background-color: green;
+    box-sizing: border-box;
+}
+
+.card{
+    top: 150px;
+    margin: auto;
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 180px;
+}
+:before{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+}
+
+
+:after{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+    -webkit-transform: rotate(-180deg);
+}
+
+.spades:before, .spades:after{content: '\2660';}
+.clubs:before, .clubs:after{content: '\2663';}
+.heart:before, .heart:after{content: '\2665'; color: red;}
+.diams:before, .diams:after{content: '\2666'; color: red;}
+
